@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300;1,400;1,700&display=swap');
+
+:root {
+    --colorazul: #4148f1;
+    --colorblanco: #ffffff;
+    --colornegro: #000000;
+    --colorgristexto1: #888888;
+    --colorgrisfondo: #cfcdcd;
+    --colorgristexto2: #85929e;
+
+    --fontlato: "lato", sans-serif;
+}
+
+::selection {
+    background-color: black;
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: "Lato", sans-serif;
+}
+
+/*estilo de pagina*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 2.25rem;
+
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+h6 {
+    font-size: 1.25rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--colorgristexto1);
+}
+
+i {
+    color: var(--colorgristexto1);
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1.25rem;
+    background-color: transparent;
+}
+
+.btn1 {
+    border: 2px solid var(--colorblanco);
+    background-color: var(--colorblanco);
+    color: var(--colorazul);
+}
+
+.btn1:hover {
+    background-color: transparent;
+    color: var(--colorblanco);
+}
+
+.btn2 {
+    border: 2px solid var(--colorazul);
+    background-color: var(--colorazul);
+    color: var(--colorblanco);
+}
+
+.btn2:hover {
+    background-color: transparent;
+    color: var(--colorazul);
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0px;
+    margin: 0px auto;
+    padding: 80px 0px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/*header - texto senati*/
+header {
+    background-color: #4148F1;
+
+}
+
+.header {
+    height: 95px;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logotipo1 {
+    height: 100%;
+    width: auto;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    gap: 50px;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+}
+
+
+.abrir-menú,
+.logotipo2,
+.cerrar-menú {
+    display: none;
+}
+
+
+/*.servicio-texto*/
+
+#servicio {
+    background-color: var(--colorblanco);
+}
+
+.servicio {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.servicio-texto {
+    text-align: center;
+    color: var(--colorazul);
+}
+
+.servicio-lista {
+    gap: 50px;
+}
+
+.servicio-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicio-1 img {
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    transition: transform 0.75s ease;
+}
+
+.servicio-1 img:hover {
+    transform: scale(1.2);
+}
+
+/*preguntas container*/
+
+
+.preguntas img {
+    width: 100%;
+    height: auto;
+}
+
+#preguntas {
+
+    background-color: #0A39E4;
+}
+
+/* footer */
+
+footer {
+    background: var(--colorazul);
+}
+
+.footer-1 {
+    gap: 50px;
+}
+
+.info {
+    & img {
+        width: 60%;
+        height: auto;
+    }
+
+    & p {
+        margin-top: 20px;
+        color: var(--colorblanco);
+        font-size: 14px;
+    }
+}
+
+.contactar {
+    & h5 {
+        padding-bottom: 45px;
+        color: var(--colorblanco);
+    }
+
+    & .contactar-lista ul {
+        list-style-type: none;
+    }
+
+    & p {
+        color: var(--colorblanco);
+        font-size: 14px;
+    }
+
+    & a {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+.contactar-lista-img {
+    width: 25px;
+    height: auto;
+
+}
+
+.contactar-lista ul li {
+    margin-bottom: 20px;
+}
+
+
+.social {
+    & h5 {
+        color: var(--colorblanco);
+    }
+}
+
+.redessociales-iconos {
+    display: flex;
+    padding-top: 45px;
+
+    & img {
+        width: 40px;
+        height: auto;
+        padding-left: 10px;
+        margin-bottom: 30px;
+    }
+}
+
+
+.newsletter {
+
+    & h5 {
+        padding-bottom: 25px;
+    }
+}
+
+.correo2 {
+    border-radius: 10px;
+}
+
+.newsletter-caja {
+    display: flex;
+    background: var(--colorgrisfondo);
+    border-radius: 10px;
+}
+
+.newsletter-caja img {
+    width: 10px;
+    height: 10px;
+}
+
+.buttonpie {
+    width: 10px;
+    height: auto;
+    align-items: center;
+    box-sizing: 20px;
+}
+
+.newsletter-caja input {
+    padding-right: 120px;
+    border: none;
+}
+
+
+/*boton de whatsApp*/
+
+.whatsapp {
+    position: fixed;
+    z-index: 10000;
+    margin: 20px;
+    inset: auto 0px 0px auto;
+}
+
+.whatsapp a img {
+    width: 50px;
+    height: auto;
+}
+
+.footer-2 {
+    color: var(--colorblanco);
+}
+
+.noopener {
+    color: var(--colorblanco);
+}
+
+
+#campus-info {
+    background-image: url(IMAGENES/CAMPUS.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.campus-info {
+    gap: 50px;
+    align-items: center;
+    color: #efefef;
+}
+
+@media (max-widht: 1023px) {
+    .container {
+
+        padding: 80px 0px;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    /*estilo de pagina*/
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+
+    h5 {
+        font-size: 1.2rem;
+    }
+
+    h6 {
+        font-size: 1.25rem;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: var(--colorgristexto1);
+    }
+
+    i {
+        color: var(--colorgristexto1);
+    }
+
+    button {
+        cursor: pointer;
+        padding: 10px 25px;
+        border: none;
+        border-radius: 25px;
+        font-weight: 600;
+        font-size: 1.25rem;
+        background-color: transparent;
+    }
+
+    .btn1 {
+        border: 2px solid var(--colorblanco);
+        background-color: var(--colorblanco);
+        color: var(--colorazul);
+    }
+
+    .btn1:hover {
+        background-color: transparent;
+        color: var(--colorblanco);
+    }
+
+    .btn2 {
+        border: 2px solid var(--colorazul);
+        background-color: var(--colorazul);
+        color: var(--colorblanco);
+    }
+
+    .btn2:hover {
+        background-color: transparent;
+        color: var(--colorazul);
+    }
+
+    .container {
+        padding: 80px 0px;
+    }
+
+    .grid-3 {
+
+        grid-template-columns: repeat 1fr
+    }
+
+    .grid-3 {
+
+        grid-template-columns: 1fr
+    }
+
+    /*Header - menu de navegacion*/
+    header {
+        background-color: var(--colorazul);
+    }
+
+    .header {
+        height: 95px;
+        padding: 15px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logotipo1 {
+        height: 100%;
+        width: auto;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav {
+        display: flex;
+        gap: 50px;
+    }
+
+    .nav-list {
+        list-style-type: none;
+        display: flex;
+        gap: 50px;
+        align-items: center;
+    }
+
+    .nav-list li a {
+        text-decoration: none;
+        color: var(--colorblanco);
+        font-size: 1.25rem;
+    }
+
+    .abrir-menu,
+    .logotipo2,
+    .cerrar-menu {
+        display: none;
+    }
+
+    /*estilos mi portada*/
+
+    .portada {
+        gap: 50px;
+    }
+
+    .imagen img {
+        width: 100%;
+        height: auto;
+    }
+
+    .textos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 25px;
+
+    }
+
+}
